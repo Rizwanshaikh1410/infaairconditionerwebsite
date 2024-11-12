@@ -1,0 +1,740 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(3, 3, 51);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(3, 3, 63);
+    flex-wrap: wrap;
+    padding: 18px;
+    box-shadow: 3px 3px 3px 3px;
+    overflow: hidden;
+}
+header h4{
+    color: white;
+    font-size: 25px;
+}
+header h4 span{
+    color: crimson;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(231, 238, 232);
+    font-size: 18px;
+    flex-wrap: wrap;
+    position: relative;
+}
+nav ul li a:hover{
+    color: aqua;
+}
+.nav-buttons{
+    display: flex;
+    gap: 20px;
+}
+.nav-buttons button{
+    padding: 10px;
+    width: 100px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.nav-buttons button:hover{
+    background-color: red;
+    color: white;
+    transition: 0.3s ease-in;
+}
+/* Media Queries */
+
+/* For Tablets (768px and below) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+    
+    nav ul {
+        gap: 15px;
+    }
+    
+    nav ul li a {
+        font-size: 16px;
+    }
+    
+    .nav-buttons {
+        gap: 15px;
+    }
+
+    .nav-buttons button {
+        width: 90px;
+        font-size: 14px;
+    }
+}
+
+/* For Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+    header h4 {
+        font-size: 20px;
+    }
+    
+    nav ul {
+        margin-top: 3%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    nav ul li a {
+        font-size: 14px;
+    }
+    
+    .nav-buttons {
+        flex-direction: column;
+        margin-top: 2%;
+        gap: 10px;
+    }
+
+    .nav-buttons button {
+        width: 80px;
+        font-size: 13px;
+    }
+}
+/*----------------------Navbar End-------------*/
+/*----------------------First Section Start -------------*/
+.first{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.first h4{
+    color: white;
+    font-size: 30px;
+}
+.first h4 span{
+    color: crimson;
+}
+.first input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 4%;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+}
+/* Media Queries */
+
+/* For Tablets (768px and below) */
+@media (max-width: 768px) {
+    .first h4 {
+        font-size: 26px; /* छोटे स्क्रीन के लिए फॉन्ट साइज घटाना */
+    }
+    
+    .first input {
+        font-size: 18px; /* इनपुट का फॉन्ट साइज घटाना */
+        padding: 8px; /* पैडिंग को थोड़ा घटाना */
+    }
+}
+
+/* For Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+    .first {
+        margin-top: 10%; /* मोबाइल पर थोड़ा अधिक मार्जिन */
+        flex-direction: column; /* कॉलम में दिखाने के लिए */
+    }
+
+    .first h4 {
+        font-size: 22px; /* और भी छोटे स्क्रीन के लिए फॉन्ट साइज घटाना */
+        text-align: center; /* टेक्स्ट को सेंटर में लाना */
+    }
+
+    .first input {
+        font-size: 16px; /* इनपुट का फॉन्ट साइज और भी घटाना */
+        padding: 10px; /* पैडिंग को थोड़ा बढ़ाना */
+    }
+}
+/*----------------------First Section End -------------*/
+/*----------------------Second Section Start -------------*/
+.second{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 4%;
+    box-sizing: border-box;
+}
+.second label,input,textarea,select{
+    display: flex;
+}
+.second form{
+    background-color: rgb(3, 3, 63);
+    box-shadow: 5px 3px 10px 9px;
+    padding: 20px;
+}
+.second p{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+}
+.second label{
+    color: white;
+    font-weight: bold;
+    padding: 6px;
+    letter-spacing: 2px;
+}
+.second input{
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 15px;
+}
+.second select{
+    margin-top: 15px;
+    width: 100%;
+    padding: 6px;
+}
+.second textarea{
+    margin-top: 15px;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+.second p span{
+    color: crimson;
+}
+.second button{
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.second button:hover {
+    color: white;
+    background: red;
+    transition: 0.3s ease-in;
+}
+/* Media Queries */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .second form {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .second p {
+        font-size: 22px;
+    }
+
+    .second button {
+        font-size: 18px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .second form {
+        padding: 10px;
+        width: 95%;
+    }
+
+    .second p {
+        font-size: 20px;
+    }
+
+    .second label {
+        font-size: 14px;
+    }
+
+    .second input, .second select, .second textarea {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+
+    .second button {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+/*----------------------Second Section End -------------*/
+/*----------------------Third Section Start -------------*/
+.thirdsection{
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.thheading h1{
+    text-align: center;
+    color: white;
+}
+.thheading p{
+    color: grey;
+    margin: 15px;
+    text-align: center;
+}
+/*----------------------Third Section End -------------*/
+/*----------------------Fourth Section Start -------------*/
+.fourthsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Makes it responsive */
+    margin-top: 50px;
+    gap: 20px; /* Adds spacing between items */
+}
+
+.fourthsection .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%; /* Ensures equal width */
+    gap: 10px; /* Adds space between elements */
+}
+
+.fourthsection img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+.fourthsection h3 {
+    color: white;
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+.fourthsection p {
+    color: grey;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.fourthsection button {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%; /* Full width for alignment */
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Button Hover Effect */
+.fourthsection button:hover {
+    background-color: darkgreen; /* Slightly darker green on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Responsive Design for Smaller Devices */
+@media (max-width: 768px) {
+    .fourthsection {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .fourthsection .item {
+        width: 80%; /* Adjust width on smaller screens */
+    }
+}
+/*----------------------Fourth Section End -------------*/
+/*----------------------Fifth Section Start -------------*/
+.fifthsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Makes it responsive */
+    margin-top: 50px;
+    gap: 20px; /* Adds spacing between items */
+}
+
+.fifthsection .item-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%; /* Ensures equal width */
+    gap: 10px; /* Adds space between elements */
+}
+
+.fifthsection img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+.fifthsection h3 {
+    color: white;
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+.fifthsection p {
+    color: grey;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.fifthsection button {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%; /* Full width for alignment */
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Button Hover Effect */
+.fifthsection button:hover {
+    background-color: darkgreen; /* Slightly darker green on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Responsive Design for Smaller Devices */
+@media (max-width: 768px) {
+    .fifthsection {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .fifthsection .item-1 {
+        width: 80%; /* Adjust width on smaller screens */
+    }
+}
+/*----------------------Fifth Section End -------------*/
+/*----------------------Sixth Section Start -------------*/
+/* Sixth Section Styling */
+.sixth-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: #fff;
+    gap: 30px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.sixth-left {
+    flex: 1;
+    min-width: 250px;
+}
+
+.sixth-left h1 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.sixth-left-img {
+    flex: 1;
+    text-align: center;
+}
+
+.sixth-left-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.sixth-left-title {
+    flex: 2;
+    min-width: 300px;
+}
+
+.sixth-left-title h1 {
+    font-size: 28px;
+    color: #27ae60;
+    margin-bottom: 10px;
+}
+
+.sixth-left-title p {
+    font-size: 18px;
+    margin-top: 5px;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* Seventh Section Styling */
+.seventh-section {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.seventh-f-title h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.seventh-f-title p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.seventh-s-title h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    color: #e74c3c;
+}
+
+.seventh-s-title h5 {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #bdc3c7;
+}
+
+.seventh-t-title h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.seventh-t-title h2, .seventh-t-title h4 {
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sixth-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sixth-left, .sixth-left-img, .sixth-left-title {
+        width: 100%;
+    }
+
+    .seventh-section h1, .seventh-section h2 {
+        font-size: 24px;
+    }
+}
+/*----------------------SIxth Section End -------------*/
+/* Review Section Styling */
+.review-section {
+    width: 100%;
+    overflow: hidden; /* Hide overflow to make it neat */
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.review-container {
+    display: flex;
+    width: 150%; /* 6 reviews, each taking 100% width of the section */
+    animation: scroll-reviews 30s linear infinite; /* Scroll animation */
+}
+
+.review {
+    width: 33.33%; /* Show 3 reviews at a time */
+    padding: 20px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+}
+
+.review img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.review h3 {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.review p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Animation for scrolling reviews */
+@keyframes scroll-reviews {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-25%); }
+    50% { transform: translateX(-50%); }
+    75% { transform: translateX(-75%); }
+    100% { transform: translateX(-100%); } /* Move entire section to left */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .review {
+        width: 50%; /* On small screens, show 1 review at a time */
+    }
+    .review-container {
+        width: 50%; /* Adjust container size */
+    }
+}
+/* Review Section End */
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 90px;
+    margin-right: 50px;
+    gap: 20px;
+}
+
+/* Individual Footer Section */
+.footer-section {
+    flex: 1 1 22%; /* 4 sections aligned horizontally */
+    min-width: 200px; /* Ensures sections remain readable on small screens */
+}
+
+.footer-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f39c12;
+}
+
+.footer-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+.footer-section ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #f39c12;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack sections vertically on small screens */
+    }
+
+    .footer-section {
+        flex: 1 1 100%; /* Full width for each section */
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 20px 10px;
+    }
+
+    .footer-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .footer-section p, .contact-info p {
+        font-size: 0.9rem;
+    }
+}
+/* Copyright Section Styling */
+.copyright-text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: rgb(3, 3, 51);
+    font-size: 14px;
+    color: white;
+}
+
+.copyright-text p {
+    margin: 0;
+    font-weight: 500;
+}
+.copyright-text a{
+    text-decoration: none;
+    color: yellow;
+}
+.copyright-text a:hover{
+    color: orange;
+}
+.whatsappcontact {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.whatsapp-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #25D366;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-button img {
+    width: 25px;
+    height: 25px;
+}

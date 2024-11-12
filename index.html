@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infa AIr Conditioner</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-------------------Header Section Start----------------------->
+    <header>
+        <h4>Infa Air <span>Conditioner</span></h4>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Installation & Complaints Related Issues</a></li>
+                <li><a href="">Products & Services</a></li>
+                <li><a href="">Our Products</a></li>
+                <li><a href="">Air Conditioner Services</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="nav-buttons">
+            <button id="signup-btn">Signup</button>
+            <button id="dashboard-btn">Login</button>
+        </div>
+    </header>
+    <!-------------------Header Section End----------------------->
+    <!------------- Main Section Start---------------------------------->
+    <main>
+        <!---------------------First Section Start---------------------------->
+        <section class="first">
+            <div class="first-heading">
+                <h4>Choose Your <span>Brand</span></h4>
+                <input type="search" id="languageInput" placeholder="Choose Your Language">
+            </div>
+        </section>
+        <!---------------------First Section End---------------------------->
+        <!---------------------Second Section Start---------------------------->
+        <section class="second">
+            <form action="send_mail.php" method="POST">
+                <p>Send Your <span>Inquiry</span></p>
+                <label for="username">Username</label>
+                <input type="text" name="username" placeholder="Enter Your name" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Enter Your Email" required>
+                <select name="brand" id="" required>
+                    <option>Select Your Brand</option>
+                    <option>SPlit Ac</option>
+                    <option>Window Ac</option>
+                    <option>Ductable AC</option>
+                    <option>Tower AC</option>
+                    <option>Chiller AC</option>
+                    <option>Cassate AC</option>
+                    <option>Installation & Complaint Related</option>
+                    <option>Refrigration</option>
+                    <option>Services</option>
+                    <option>Other</option>
+                </select>
+                <textarea name="question"
+                    placeholder="Enter Your Information And Provide Your Choice And Mobile Number Correctly And Whatsapp Contact Person Mobile Number"
+                    required></textarea>
+                <button type="submit" onclick="showAlert()">Submit</button>
+            </form>
+        </section>
+        <script>
+            function showAlert() {
+                alert('संदेश सफलतापूर्वक भेजा गया'); // Message Sent Successfully in Hindi
+                return true; // Allow form to submit
+            }
+        </script>
+        <!---------------------Second Section End---------------------------->
+        <!---------------------Third Section Start---------------------------->
+        <section class="thirdsection">
+            <div class="thheading">
+                <h1>Welcome To Customer Helpline Center</h1>
+                <p>We have a specialist Experience technician of Washing Machine, Refrigerator, Microwave clothes dryer,
+                    Dishwasher, LED/LCD TV Repair & Service. <br> We provide Experts Professional Service Doorstep
+                    Service with in 1 hour.</p>
+            </div>
+        </section>
+        <!---------------------Third Section End---------------------------->
+        <!---------------------Fourth Section Start---------------------------->
+        <section class="fourthsection">
+            <div class="item">
+                <img src="technician-1.jpg" alt="AC Repair & Services">
+                <h3>AC Repair & Services</h3>
+                <p>Customer Helpline Centre provides the best Air Conditioner Repair and Service work in Delhi at the
+                    most reasonable costs.</p>
+                <button class="call-button" data-number="1800-123-4567">Call Now</button>
+            </div>
+            <div class="item">
+                <img src="technician-2.jpg" alt="Washing Machine Repair">
+                <h3>Washing Machine Repair & Service</h3>
+                <p>Fast Washing Machine service: Top Load, Front Load, Water Leakage, Spinning Issues. Book Now!</p>
+                <button class="call-button" data-number="1800-234-5678">Call Now</button>
+            </div>
+            <div class="item">
+                <img src="technician-3.jpg" alt="Refrigerator Repair">
+                <h3>Refrigerator Repair & Service</h3>
+                <p>Reliable and affordable local fridge repair at your doorstep!</p>
+                <button class="call-button" data-number="1800-345-6789">Call Now</button>
+            </div>
+        </section>
+
+        <section class="fifthsection">
+            <div class="item-1">
+                <img src="technician-4.jpg" alt="AC Repair">
+                <h3>AC Repair & Services</h3>
+                <p>We provide quick AC repair services at reasonable rates.</p>
+                <button class="call-button" data-number="1800-456-7890">Call Now</button>
+            </div>
+            <div class="item-1">
+                <img src="technician-5.jpg" alt="Washing Machine Service">
+                <h3>Washing Machine Repair & Service</h3>
+                <p>We repair top-load, front-load machines, and more!</p>
+                <button class="call-button" data-number="1800-567-8901">Call Now</button>
+            </div>
+            <div class="item-1">
+                <img src="technician-6.jpg" alt="Fridge Repair">
+                <h3>Refrigerator Repair & Service</h3>
+                <p>Need fridge repair? Get fast and reliable services now!</p>
+                <button class="call-button" data-number="1800-678-9012">Call Now</button>
+            </div>
+        </section>
+
+        <!---------------------Fifth Section End---------------------------->
+        <!---------------------SIxth Section Start---------------------------->
+        <!-- Sixth Section - About Us -->
+        <section class="sixth-section">
+            <div class="sixth-left">
+                <h1>हमारे बारे में (About Us)</h1>
+            </div>
+            <div class="sixth-left-img">
+                <img src="about-us1.jpg" alt="About Us Image">
+            </div>
+            <div class="sixth-left-title">
+                <h1>हम कौन हैं (Who We Are)</h1>
+                <p>Customer Care Services दिल्ली में सबसे अच्छा AC, रेफ्रिजरेटर, माइक्रोवेव और वॉशिंग मशीन रिपेयर और
+                    सर्विस सेंटर है।
+                    हम 24/7 सेवा प्रदान करते हैं और आपकी सुविधा के लिए 1 घंटे में सहायता उपलब्ध करा सकते हैं। हमारे कुशल
+                    इंजीनियर
+                    कम लागत में आपकी समस्या का समाधान करेंगे।</p>
+            </div>
+            <div class="sixth-left-title-2">
+                <h1></h1>
+            </div>
+        </section>
+
+        <!-- Seventh Section - Customer Support -->
+        <section class="seventh-section">
+            <div class="seventh-f-title">
+                <h1>24/7 ग्राहक सहायता (24/7 Customer Support)</h1>
+                <p>आपातकालीन सेवा के लिए (For Emergency Service)</p>
+            </div>
+            <div class="seventh-s-title">
+                <p>टोल फ्री नंबर (Toll-free No)</p>
+                <h2>1800-570-4545</h2>
+                <h5>आपातकालीन सेवा के लिए हमसे कभी भी संपर्क करें!</h5>
+            </div>
+            <div class="seventh-t-title">
+                <h3>प्रश्नों के लिए (For Queries):</h3>
+                <h2>टोल फ्री नंबर: <span>1800-570-4545</span></h2>
+                <h4>ईमेल: <span>customerscareservices.in@gmail.com</span></h4>
+            </div>
+        </section>
+        <!---------------------SIxth Section End---------------------------->
+        <!---------------------Review Section Start---------------------------->
+        <section class="review-section">
+            <h1 style="text-align: center; justify-content: center; display: flex; align-items: center;">Our Brand
+                Technician</h1>
+            <div class="review-container">
+                <div class="review">
+                    <img src="1review.png" alt="Review Image">
+                    <h3>AC Repair</h3>
+                    <p>Thanks for showing up on time. Both Window and Split ACs are working fine, fully satisfied with
+                        the service.</p>
+                </div>
+                <div class="review">
+                    <img src="2ndreview.png" alt="Review Image">
+                    <h3>AC Repair</h3>
+                    <p>The workers were well-behaved. I am happy with the service and charges. Same-day repair was
+                        impressive!</p>
+                </div>
+                <div class="review">
+                    <img src="2.png" alt="Review Image">
+                    <h3>AC Repair</h3>
+                    <p>Timely service and good behavior. My ACs are running smoothly now. Highly recommend Service
+                        Clone!</p>
+                </div>
+                <div class="review">
+                    <img src="1review.png" alt="Review Image">
+                    <h3>AC Repair</h3>
+                    <p>Best AC repair service. Workers showed professionalism. Completely satisfied with the repair and
+                        cost.</p>
+                </div>
+                <div class="review">
+                    <img src="2ndreview.png" alt="Review Image">
+                    <h3>AC Repair</h3>
+                    <p>Fast response and excellent service. Window and Split ACs are functioning well now. Great job!
+                    </p>
+                </div>
+                <div class="review">
+                    <img src="2.png" alt="Review Image">
+                    <h3>AC Repair</h3>
+                    <p>Service Clone provided exceptional service. Highly professional team and very reasonable prices.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!---------------------Review Section End---------------------------->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section first-footer">
+                    <h2>About Us</h2>
+                    <p>We are a professional company offering a wide range of repair services for homes and workplaces.
+                        We promise to exceed your expectations with high-quality services and trusted employees.</p>
+                </div>
+
+                <div class="footer-section second-footer">
+                    <h2>Useful Links</h2>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Working Location</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section third-footer">
+                    <h2>Services</h2>
+                    <ul>
+                        <li><a href="#">AC Repair</a></li>
+                        <li><a href="#">Fridge Repair</a></li>
+                        <li><a href="#">Microwave Repair</a></li>
+                        <li><a href="#">Washing Machine Repair</a></li>
+                        <li><a href="#">Electrical Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section fourth-footer">
+                    <h2>Contact Details</h2>
+                    <div class="contact-info">
+                        <p><strong>Address:</strong> Indore</p>
+                        <p><strong>Toll-Free Number:</strong> 1800-570-4545</p>
+                        <p><strong>Email:</strong> support@example.com</p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <div class="copyright-text pull-left">
+            <p>Copyrights © 2024 All Rights Reserved by <a href="index.html">Customer Helpline Centre.</a> </p>
+            <div class="whatsappcontact">
+                <a href="#" class="whatsapp-button">
+                    <img src="whatsapp.png" alt="WhatsApp" />
+                </a>
+            </div>
+            
+        </div>
+    </main>
+    <!------------- Main Section End---------------------------------->
+    <script src="review.js"></script>
+    <script src="index.js"></script>
+    <script src="callbutton.js"></script>
+    <script src="whatsapp.js"></script>
+</body>
+
+</html>
